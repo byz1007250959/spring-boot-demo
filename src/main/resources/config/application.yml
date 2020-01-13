@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/test
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: BYZdzh3613
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.example.demo.entity
+logging:
+  config: classpath:config/logback-spring.xml
+
